@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Ouvertures</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../css/general.css">
+    <link rel="stylesheet" type="text/css" href="../../css/war.css">
+</head>
+
+<body>
+
+<header th:replace="~{fragment::menu}"></header>    <!-- Fragment du menu déroulant-->
+
+<section class="globale">	<!-- C'est la section de L'OUVERTURE CATALANE -->
+    <section class="def">
+        <div class="zone1">	<!-- On travaille sur les blocs d'identité "zone 1". Ce sont les titres et images des articles-->
+
+            <img src="../../img/catalane.PNG">
+        </div>
+        <div class="para">		<!-- Création d'un sous-bloc d'identification "para", ce sont les textes des articles-->
+            <h2>L'ouverture catalane</h2>	<!-- Nom de le défence/ouverture -->
+            <p>Avec ce fianchetto précoce les blancs évitent à la fois la défense ouest-indienne et les sentiers du gambit dame</p>
+        </div>
+    </section>
+</section>		<!-- C'est la section de L'OUVERTURE CATALANE -->
+
+<form class="commentaire" th:replace="~{fragment::commentaire}"></form> <!-- Fragment du formulaire de soumission d'un commentaire -->
+
+
+
+<aside id="contact" th:replace="~{fragment::contact}"></aside>     <!-- Fragment du lien vers le formulaire pour contacter les administrateurs -->
+</body>
+</html>

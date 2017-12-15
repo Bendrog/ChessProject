@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Attaques</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/general.css">
+	<link rel="stylesheet" type="text/css" href="../css/war.css">
+</head>
+
+<body>
+
+<header th:replace="~{fragment::menu}"></header>
+
+	<div id="bloc_page">
+		<h1>Les attaques classiques aux échecs</h1>
+
+		<section class="attack">
+		
+			<div class="zone1" >
+				<img src="../../img/fourchette.png" class="attaque">
+			</div>
+			<section>
+				<h2>La fourchette</h2>
+				<div class="parag">
+				<p>Une fourchette est un mouvement très puissant, à l'initiative d'un cavalier. Sa particularité de
+					déplacement lui permet d'<strong>être offensif sur plusieurs pièces à la fois, sans se mettre en danger.</strong>
+				La fourchette consiste à attaquer 2 ou plusieurs pièces ennemies en un seul coup. La fourchette est réussie
+					si l’adversaire ne parvient pas à sauver ses deux pièces. Mais il arrive que les deux pièces puissent être sauvées,
+					si la pièce qui s’enfuit protège celle qui est attaquée, si elle délivre un échec ou si elle crée une menace sérieuse,
+					devant être parée. Le temps gagné est alors utilisé pour sauver son amie.</p>
+			</div>
+			</section>
+		</section>
+
+		<section class="attack">
+			<div class="zone1">
+				<img src="../../img/clouage.png" class="attaque">
+			</div>
+			<section>
+					<h2>Le Clouage</h2>
+				<div class="parag">
+					<p>Le clouage empêche ou dissuade une pièce ennemie de bouger, en effet, en bougeant, la pièce expose une case clé ou une pièce de valeur supérieure.</p>
+				</div>
+			</section>
+		</section>
+		<section class="attack">
+			<div  class="zone1">
+				<img src="../../img/enfilade.PNG" class="attaque">
+			</div>
+			<section>
+				<h2>L'enfilade</h2>
+				<div class="parag">
+					<p>L’enfilade ressemble au clouage, mais à l’envers, en d’autres termes, la pièce la plus importante se trouve en face de celle de moindre valeur.</p>
+				</div>
+			</section>
+			
+		</section>
+
+		<section class="attack">
+			
+			<div class="zone1">	
+				<img src="../../img/decouverte.PNG" class="attaque">
+			</div>
+			<section>
+				<h2>L'attaque à la découverte</h2>
+				<div class="parag">
+				<p>L'attaque à la découverte a lieu quand une pièce bouge pour libérer une ligne (colonne ou diagonale) pour une pièce alliée. La pièce alliée attaque ainsi une pièce ennemie sans même avoir bougé. En général, la pièce qui bouge attaque également, ce qui décuple la puissance de l’attaque.</p>
+			</div>
+			</section>
+			
+		</section>
+	</div>
+
+	<aside id="contact" th:replace="~{fragment::contact}"></aside>
+
+</body>
+</html>

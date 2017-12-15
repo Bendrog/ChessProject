@@ -1,0 +1,126 @@
+.attaque{       /* on travaille sur ce qui est de "class attaque" ce sont les images de la page dédiée aux attaques */
+    width: 30px;   /* leur largeure est de 300px */
+
+}
+.attack{
+    margin: 100px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.zone1{     /* on travaille sur les id: "zone1"*/
+    display: flex;
+    flex-direction: column;
+    float: left;    /* ls sont flottants et de collent le plus à gauche possible */
+}
+.para h2{
+    text-align: right;
+    top:0;
+}
+.para{      /* on travaille sur les id: "para"* ce sont les paragraphes qui décrivent chaque attaque/défence/ouverture */
+    display: flex;      
+    justify-content: left;  /* le bloc est sur la gauche */
+    align-items:left;       /* les éléments de ce bloc sont centrés */
+    text-align: center;      /* le texte est centré */
+    margin-left: 100px;     /* le bloc est à 100px à droite de son voisin */
+    margin-top: 150px;      /* le bloc est à 150px en dessous de son voisin */
+    margin-right: 100px;    /* le bloc est à 100px à gauche de son voisin */
+    border-radius: 20px;    /* les coins sont arrondis */
+    padding-left: 8px;      /* le texte commence à 8px de la bordure de gauche du bloc */
+    padding-right: 8px;     /* le texte commence à 8px de la bordure de droite du bloc */
+    flex-direction: column;
+    top:0;
+}
+.parag{      /* on travaille sur les id: "para"* ce sont les paragraphes qui décrivent chaque attaque/défence/ouverture */
+    display: flex;      
+    justify-content: left;  /* le bloc est sur la gauche */
+    align-items:left;       /* les éléments de ce bloc sont centrés */
+    text-align: center;      /* le texte est centré */
+    border-radius: 20px;    /* les coins sont arrondis */
+    flex-direction: column;
+    top:0;
+    width: 800px;
+    text-align: justify;
+    height: 200px
+}
+.attack section{
+    display: flex;
+    flex-direction: column;
+}
+.para p{
+    text-align: justify;
+}
+.def{        /* on travaille sur les blocs "section", ils englobent #zone1 et #para */
+                       /* Ils prennent toute le largeure de la page */
+    height: 250px;                  /* leur hauteur est de 450px */
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+#block_page{        /* on travaille sur le bloc qui englobe tout ce qu'il y a dans le body */
+    margin: 100px;  /* le bloc est à 100px en dessous de son voisin */
+}
+    h2{         /* on travaille sur les textes de niveau 2 */ 
+    margin-left:200px;                  /* le bloc est à 100px à droite de son voisin */
+    color: lightgreen;                  /* ils sont vert claire */
+    font-size: x-large;                 /* tailles des lettres */
+    border-radius: 50px;                /* les coins sont arrondis */
+    padding-left: 25px;                 /* le texte commence à 25px de la bordure de gauche du bloc */
+    display: inline;
+}
+figcaption{     /* on travaille sur les légendes des images */
+    padding-top: 10px;  /* Elle est espacé de 10px en dessous du début du bloc */
+    margin-top: 10px;   /* le bloc est à 10px en dessous de son voisin */
+}
+strong{     /* on travaille sur le texte mis en valeur */
+    border-radius: 7px;
+}
+.zone1 img{
+    width: 150px;
+    padding: 50px;
+    border-radius: 60px;
+}
+.def aside{
+    border-radius: 20px;
+    height: 30px;
+    width: 100px;
+    margin-left: 780px;
+    margin-top: 0px;
+    background-color: lightgrey;
+    text-align: center;
+    font-family: "Agency FB";
+    font-weight: bold;
+}
+.def aside a{
+    text-align: center;
+    padding-top: 7px;
+}
+blockquote{
+    height: 250px;                  /* leur hauteur est de 450px */
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: white;
+    border-radius: 15px;
+}
+blockquote p{
+    display: flex;
+    justify-content: left;  /* le bloc est sur la gauche */
+    align-items:left;       /* les éléments de ce bloc sont centrés */
+    border-radius: 20px;    /* les coins sont arrondis */
+    flex-direction: column;
+    top:0;
+    width: 800px;
+    text-align: justify;
+    height: 200px
+}
+
+blockquote span{
+    margin-left: 0;
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 0;
+    text-align: center;
+}

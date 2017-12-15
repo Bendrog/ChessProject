@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head >
+    <title>Fragments</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+<header th:fragment="menu"> // Fragment du Menu déroulant
+    <nav id="conteneur">
+        <ul id="menu-deroulant">
+
+            <li class="sousliste">
+                <a href="home">HOME</a>
+            </li>
+            <li class="sousliste"><a href="#">S'entraîner</a>
+                <ul>
+                    <li><a href="attaques">Attaque</a></li>
+                    <li><a href="defences"> Défence </a></li>
+                    <li><a href="conseils">Ten tips</a></li>
+                </ul>
+            </li>
+            <li class="sousliste"><a href="jeux">jeu</a>
+            </li>
+        </ul>
+    </nav>
+</header>       <!-- Fragment du Menu déroulant-->
+
+<aside id="contact" th:fragment="contact"><a href="contact"><img src="../../img/contact.PNG"></a></aside>  <!--Fragement du lien pour nous contacter-->
+
+<form method="post" class="commentaire" th:fragment="commentaire" action="" > <!-- Formulaire pour écrire un commentaire-->
+    <fieldset>
+        <legend>Commentez cette ouverture</legend>
+        <label for="login"> Saisissez pseudo : </label>
+        <input type="text" name="login" placeholder="Votre pseudo" id="login" required >
+
+        <label for="comment"> Saisissez votre commentaire : </label>
+        <textarea name="comment" id="comment"> Votre commentaire </textarea>
+
+        <div class="button">
+        <button type="submit">Validez</button>
+        </div>
+
+
+    </fieldset>
+
+
+</form> <!-- Formulaire de soumission de commentaire -->
+
+
+
+</body>
+</html>

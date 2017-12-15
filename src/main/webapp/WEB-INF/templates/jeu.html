@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Jeux</title>
+	<link rel="stylesheet" type="text/css" href="../../css/general.css">
+	<link rel="stylesheet" type="text/css" href="../../css/jeux.css">
+</head>
+<body>
+
+<header th:replace="~{fragment::menu}"></header>
+
+	<section id="lente">
+		<h3>Partie lente</h3>
+		<article>
+			<p>En partie rapide chaque joueur a un temps limité pour jouer. Ce sont notamment les règles utilisé lors de tournois. Est considéré partie rapide toute partie laissant moins de 60minutes par joueurs.</p>
+		</article>
+		
+	</section>
+	<section id="blitz">
+		<h3>Le Blitz</h3>
+		<article>
+			<p>Le Blitz, autrement appelé jeu éclair, est une partie d'échec se jouant en moins de 15 minutes par personne. Le principe est donc de limiter la durée de jeu. Ceci favorise la rapidité d'exécution et non la qualité de jeu. </p>
+		</article>
+	</section >
+		
+	<section id="bullet"> 
+			<h3>Le Bullet</h3>
+			<article>
+				<p>Le Bullet est un jeu très rapide. Il laisse à chacun une minute pour jouer. Ce jeu n'ayant que peu d'intérêt puisque la casi majorité des parties se termine par une chute de drapeau</p>
+			</article>
+		
+	</section>
+
+	<nav id="video">
+		<p>Voici un exemple de partie Blitz jouée entre Magnus Carlsen (champion du monde Blitz en 2009) et Bill Gates. </br> </br> Ici il y a volontairement un déséquilibre, Carlsen a 30 secondes de jeu et Gates 2 minutes. Une partie très rapide qui met sous pressions les deux adversaires. On vois que la qualité de jeu n'es pas mis en avant. Magnus gagne finalement la partie en une dizaine de seconde. Ceci étant, il faut admettre que Bill Gates n'a pas très bien joué... Tout le monde ne réagis pas d ela même façon face à la pression ! </p>
+		<video controls="controls" title="Partie"/>
+			<source src="../../../../../../../../projet%20html/video/bill_magnus.mp4" type="video/mp4"/>
+		</video>
+	</nav>
+<aside id="contact" th:replace="~{fragment::contact}"></aside>
+	
+
+</body>
+
+</html>

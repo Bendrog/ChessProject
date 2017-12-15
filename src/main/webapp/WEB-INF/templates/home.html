@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>HOME</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../../css/general.css">
+	<link rel="stylesheet" type="text/css" href="../../css/form.css">
+	
+</head>
+
+<body>
+
+	<header th:replace="~{fragment::menu}"></header>
+
+	<section id="fond">
+		
+
+	<section id="regles"> <!-- Création de la section regles-->
+		<section id="but">	<!-- Création -->
+				<h2>Le But du Jeu</h2>
+				<p>Mettre l'adversaire <strong>Echec et Mât</strong>. On dit que le que le Roi est échec et mât lorsque :
+				<ul>
+					<li>Le Roi ne peu plus se déplacer</li>
+					<li>Aucune pièce allié ne peut se placer entre le Roi et la pièce ennemmi</li>
+					<li>La pièce qui met en échec ne peut être éliminé</li>
+				</ul>
+				</p>
+		</section>
+				<h2>Le déplacement des Pièces</h2>
+		<section class="regle">			
+			<div class="mvt">
+				<figure>
+					<aside>	<h3>Le pion</h3> </aside>
+					<img src="../../img/mvt_pion.PNG">
+					
+				</figure>
+				<article>
+								
+					<ul>
+						<li>Il avance devant lui</li>
+						<li> <strong>Il capture en diagonale</strong></li>
+						<li>Il avance d'une case <strong>Sauf</strong> </br>la première fois qu'il est joué, où il peut se déplacer de 2 cases</li>
+					</ul>
+				</article>
+			</div>
+			<div class="mvt">
+				<figure>
+					<aside>	<h3>Le Cavalier</h3></aside>	
+					<img src="../../img/mvt_cavalier.PNG">
+								
+				</figure>
+				<article>
+	
+					<ul>
+						<li>Se déplace en L</li>
+						<li>Saute par dessus les autres pièces</li>
+						<li>Change de couleur de case à chaque déplacement</li>
+					</ul>
+				</article>				
+			</div>
+			<div class="mvt">
+				<figure>
+					<aside><h3>Le Fou</h3></aside>
+					<img src="../../img/mvt_fou.PNG">
+								
+				</figure>
+				<article>
+					
+				
+					<ul>
+						<li>Il se dépalce en diagonale</li>
+						<li> Il en existe un de chaque couleur</li>
+						<li>Il se déplace d'autant de case qu'il veut</li>
+						<li>Il peut reculer et avancer</li>
+					</ul>
+				</article>				
+			</div>
+			<div class="mvt">
+				<figure>
+					<aside>	<h3>La Tour</h3></aside>
+					<img src="../../img/mvt_tour.PNG">
+										
+				</figure>
+				<article>
+					
+					<ul>
+						<li>Elle se déplace selon les axes horizontales et verticales</li>
+						<li>Elle se déplace d'autant de case qu'elle veut</li>
+						<li>Elle peut reculer et avancer</li>
+					</ul>
+				</article>
+			</div>
+			<div class="mvt">
+				<figure>
+					<aside><h3>Le Roi</h3></aside>
+					<img src="../../img/mvt_roi.PNG">
+					
+				</figure>
+				<article>
+					
+
+					<ul>
+						<li>Il se déplace d'une case</li>
+						<li>Il peut se déplacer dans toutes les directions</li>
+						<li>Ill doit y avoir au moins 2 cases entre les rois Blanc et Noir</li>
+					</ul>
+				</article>
+				
+			</div>
+			<div class="mvt">
+				<figure>
+					<aside><h3>La Reine</h3></aside>
+					<img src="../../img/mvt_reine.PNG">
+					
+				</figure>
+				<article>
+				
+						<ul>
+							<li>Elle se déplace dans toutes les directions</li>
+							<li>Elle se déplace d'autant de case qu'elle souhaite</li>
+						</ul>
+				</article>
+			</div>
+		</section>
+			<h2>Les régles Spéciales</h2>
+		<section class="regles">
+		
+			<div id="rocs">
+					
+						<figure>
+
+							<div id="roc1">		
+								<h3>Le Roc O-O</h3>
+								<img src="../../img/roc1.PNG">
+								<img class="f" src="../../img/fleche_droite.png">
+								<img src="../../img/roc2.PNG">
+							</div>
+								
+							<div id="roc2">
+								<h3>Le Grand Roc O-O-O</h3>
+								<img src="../../img/groc.PNG">
+								<img class="f" src="../../img/fleche_droite.png">
+								<img src="../../img/groc2.PNG">
+							</div>
+						</figure>
+						<aside>
+								<p>
+									Le Roc est un coup défensif qui vise à défendre son roi à l'aide d'une tour. Il peut s'effectuer sous ertaines conditions:
+								</p>
+									<ul>
+										<li>Le roi n'est pas en échec</li>
+										<li>Ni la tour, ni le roi n'a été déplacé</li>
+										<li>Aucune case séparent le roi de la tour n'est contrôlé par une pièce adverse</li>
+									</ul>
+						</aside>
+			</div>
+			<div id="promo">
+				<figure>
+					<h3>La promotion</h3>
+					<img src="../../img/promotion.jpg">
+				</figure>
+				<article>
+				<p>Lorsqu'un pion atteint la dernière ligne du plateau, il peut être promu (transformé) en une pièce maîtresse (Cavalier, Fou, Tour ou Dame)</p>
+				</article>
+			</div>
+			<div id="prise">
+				<figure>
+					<h3>La prise en passant</h3>
+					<img src="../../img/promo1.PNG">
+					<img class="f" src="../../img/fleche_droite.png">
+					<img src="../../img/promo2.PNG">
+					<img class="f" src="../../img/fleche_droite.png">
+					<img src="../../img/promo3.PNG">
+				</figure>
+				<article>
+					<p>La prise en passant s'effectue sur un pion adverse s'étant déplacé de 2 cases <strong> en un seul mouvement</strong>. Un pion peut alors capturer le pion adverse (situé sur la même ligne, dans une collone adjacente) en avancant d'une case en diagonale. Il se trouve alors sur la collonne ou se trouvait le pion adverse, une ligne plus loin.</p>
+				</article>
+			</div>
+			<div id="pat">
+				<h3>La pat (match nul)</h3>
+				<article>
+					<p>Il y a Pat lorsque : </p>
+						<ul>
+							<li>Le roi n'est pas mis en échec</li>
+							<li>Le roi n'as pas de coup legal</li>
+							<li>aucun autre pièce ne peut êre déplacé</li>
+						</ul>
+					<p> En outre, le joueur ne peut pas jouer! Sa seule solution serait de passer son tour.</p>
+				</article>
+				<h3>Le match nul</h3>
+				<article>
+					<ul>
+						<li>Il y a Pat</li>
+						<li>Il n'y a pas assez de pièce pour faire mat</li>
+						<li>Un joueur fais des échecs perpétuels</li>
+						<li>Il y a 50 mouvements sans échecs ni pièce capturée</li>
+					</ul>
+				</article>
+			</div>
+		
+		</section>
+
+		<aside id="contact" th:replace="~{fragment::contact}"></aside>
+	</section>
+	</section>
+	
+</body>
+
+<footer>
+</footer>
+</html>

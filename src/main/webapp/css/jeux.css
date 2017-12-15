@@ -1,0 +1,43 @@
+#lente, #blitz, #bullet{
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 15px;
+	margin-right: 55px;
+	margin-left: 55px;
+	padding: 20px;
+	margin-bottom: 10px;
+	text-align: justify;
+}
+#lente{
+	margin-top: 200px;
+
+}
+#video{
+	/*text-align: center;*/
+	padding: 0;
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+
+}
+#video video{
+	width: 700px;
+	padding-top:0;
+	margin-top: 0;
+	margin-left: 300px;
+	border-radius: 20px;
+	border: transparent;
+
+
+}
+#video p{
+	border: 1px solid black;
+	height: 100px;
+	text-align: justify;
+	padding: 20px;
+	margin-right: 55px;
+	margin-left: 55px;
+	background-color: white;
+	border-radius: 15px;
+}

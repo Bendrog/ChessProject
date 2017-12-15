@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Ouvertures</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../css/general.css">
+    <link rel="stylesheet" type="text/css" href="../../css/war.css">
+</head>
+
+<body>
+
+<header th:replace="~{fragment::menu}"></header>    <!-- Fragment du menu déroulant-->
+
+
+<section class="globale">	<!-- C'est la section de l' OUVERTURE SICILIENNE -->
+    <section class="def">
+        <div class="zone1">	<!-- On travaille sur les blocs d'identité "zone 1". Ce sont les titres et images des articles-->
+
+            <img src="../../img/sicilienne.PNG">
+        </div>
+        <div class="para">		<!-- Création d'un sous-bloc d'identification "para", ce sont les textes des articles-->
+            <h2>La défence sicilienne</h2>	<!-- Nom de le défence/ouverture -->
+            <p>	Cette ouverture représente le domaine le plus vaste et le plus analysé de la théorie des débuts de partie. Avec cette ouverture, les noirs ont une supériorité de pion au centre. Par contre, leur développement est retardé. Les blancs peuvent dans la plupart des variantes, utiliser cette circonstance pour monter une attaque contre le roi noir, tandis que les noirs cherchent leurs contre-chances à l'aile dame</p>
+        </div>
+
+    </section>
+
+</section>		<!-- C'est la section de l' OUVERTURE SICILIENNE -->
+
+<form class="commentaire" th:replace="~{fragment::commentaire}"></form> <!-- Fragment du formulaire de soumission d'un commentaire -->
+
+
+
+<aside id="contact" th:replace="~{fragment::contact}"></aside>     <!-- Fragment du lien vers le formulaire pour contacter les administrateurs -->
+</body>
+</html>

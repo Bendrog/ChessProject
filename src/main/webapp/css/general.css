@@ -1,0 +1,266 @@
+header{
+    margin: 0;
+    padding: 0;
+}
+
+html{   /* on travaille sur toute la page html  */
+        /*background-color: silver;*/
+        z-index: 1;    /* le fond du site est argenté */ 
+    }
+body{
+    margin: 0;
+    padding: 0;
+    background-color: silver;
+    z-index: 0;
+    border: 10px solid black;
+}
+.fond{
+    width: 700px;
+    background-color: red;
+}
+h2{
+    color: saddlebrown;
+}
+.sousliste{
+    flex: 4;
+}
+#conteneur{
+    margin: 0;
+    top: 0;
+    position: fixed;
+    display: flex;      
+    left: 0;
+    right: 0;
+    padding: 0;
+    width: 100%;
+    }
+
+#menu-deroulant, #menu-deroulant ul /* Liste */     
+{
+        padding : 0; /* pas de marge intérieure */
+        list-style : none; /* on supprime le style par défaut de la liste */
+        line-height : 100px; /* on définit une hauteur pour chaque élément */
+        text-align : center; /* on centre le texte qui se trouve dans la liste */
+        font-weight: bold;   /* on met le texte en gras */
+        
+       }
+
+#menu-deroulant /* Ensemble du menu */
+{
+        font-weight : bold; /* on met le texte en gras */
+        font-family : Arial; /* on utilise Arial */
+        font-size : 12px; /* hauteur du texte : 12 pixels */
+        text-align: center; /* on centre les menus dans leurs blocs */
+        display: flex;
+}
+#menu-deroulant ul {
+        margin-top: 100px; /* les listes déroulantes commencent en dessous des menus, pour ne pas les "cacher" */
+    }
+
+#menu-deroulant a /* Contenu des listes */
+{
+        display : block; /* on change le type d'élément, les liens deviennent des balises de type block */
+        padding-top: 0; /* aucune marge intérieure */
+        background : #000; /* couleur de fond */        
+        color : #fff; /* couleur du texte */
+        text-decoration : none; /* on supprime le style par défaut des liens (la plupart du temps = souligné) */
+        width : 435px; /* largeur : 435px*/
+        float: left;
+        height: 100px;
+}
+
+#menu-deroulant li /* Elements des listes */      
+{ 
+        float : left; 
+        /* pour IE qui ne reconnaît pas "transparent" */
+        border-right : 1px solid #fff; /* on met une bordure blanche à droite de chaque élément */
+        
+}
+
+/* IE ne reconnaissant pas le sélecteur ">" */
+html>body #menu-deroulant li
+{
+        border-right: 1px solid transparent ; /* on met une bordure transparente à droite de chaque élément */
+}
+
+#menu-deroulant li ul /* Sous-listes */
+{ 
+        position: absolute; /* Position absolute */
+        width: 434px; /* Largeur des sous-listes */
+        left: -999em; /* Hop, on envoie loin du champ de vision */
+}
+#menu-deroulant li ul li /* Éléments de sous-listes */
+{
+        /* pour IE qui ne reconnaît pas "transparent" (comme précédemment) */
+        border-top : 1px solid #fff; /* on met une bordure blanche en haut de chaque élément d'une sous liste */
+        
+}
+
+/* IE ne reconnaissant pas le sélecteur ">" */
+html>body #menu-deroulant li ul li                
+{
+        border-top : 1px solid transparent; /* on met une bordure transparente en haut de chaque élément */
+}
+
+#menu-deroulant a:hover /* Lorsque la souris passe sur un des liens */    
+{
+        color: #000; /* On passe le texte en noir... */
+        background: #fff; /* ... et au contraire, le fond en blanc */       
+}
+#menu-deroulant li:hover ul {
+/* Au survol des li du menu on replace les sous menus */
+    left: auto;
+}
+figcaption{     /* on travaille sur les légendes des images */
+    padding-top: 10px;  /* Elle est espacé de 10px en dessous du début du bloc */
+    margin-top: 10px;   /* le bloc est à 10px en dessous de son voisin */
+}
+ol li{      /* on travaille sur les lignes des listes numérotées */
+        font-family: arial;     /* on utilise Arial comme police */
+        font-size: large;      /* tailles des lettres */
+        font-style: italic; /* on met le texte en italic */
+        font-weight: bold;   /* on met le texte en gras */
+}
+h1 {    /* on travaille sur les titres de niveau 1*/
+        text-align: center;     /* le texte est centré */
+        color: darkorange;  /* le texte est en orange foncé */
+        font-size: xx-large;    /* taille des lettres */
+        margin-top: 200px;      /* le bloc est à 200px en dessous de son voisin */
+}
+ 
+#but{
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    border:1px solid black;
+}
+#but p{
+    text-align: center;
+}
+#regles{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.regle{
+     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin:100px;
+}
+.mvt
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;   
+    width: 400px;
+    height: 300px;
+    margin: 1px;
+}
+.mvt figure{
+    float:right;
+}
+.mvt h3{
+    float: left;
+}
+.f, .p{
+    width: 100px;
+    height: 100px;
+}
+.mvt figure{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 10px;
+    width: 350px;
+    border-radius: 20px;
+} 
+
+img{
+    border-radius: 15px;
+}
+.p{
+    padding-top: 18px; 
+}
+#rocs{
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    border: 1px solid black;
+}
+#rocs figure{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 100px;
+}
+#roc1 h3, #roc2 h3{
+    text-align: center;
+    border-radius: 5px;
+}
+aside ul{
+    text-align: left;
+}
+aside p{
+    text-align: center;
+}
+#promo img{
+    width: 100px;
+}
+#promo{
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+#promo article{
+    padding: 7px;
+    padding-top: 60px;
+}
+#prise figure{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#prise p{
+    padding-left: 0;
+}
+#prise{
+    background-color:white;
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid black;
+}
+#prise figure img{
+    width: 100px;
+    height: 100px;
+}
+section ul {
+    list-style-type: square ;
+    list-style: none;
+}
+#pat{
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid black;
+    padding:20px;
+}
+#rocs, #promo, #prise, #pat{
+    margin: 100px;
+}
+#contact img{
+    width: 100px;
+    border-radius: 20px;
+
+}
+#contact{
+    position: fixed;
+    float: left;
+    left: 10px;
+    bottom: 0;
+}

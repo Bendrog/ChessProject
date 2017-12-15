@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Ouvertures</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../css/general.css">
+    <link rel="stylesheet" type="text/css" href="../../css/war.css">
+</head>
+
+<body>
+
+<header th:replace="~{fragment::menu}"></header>    <!-- Fragment du menu déroulant-->
+
+<section class="globale">		<!-- C'est la section de l'OUVERTURE BOGO-INDIENNE-->
+    <section class="def">
+        <div class="zone1">	<!-- On travaille sur les blocs d'identité "zone 1". Ce sont les titres et images des articles-->
+
+            <img src="../../img/bogo.PNG">
+        </div>
+        <div class="para">		<!-- Création d'un sous-bloc d'identification "para", ce sont les textes des articles-->
+            <h2>La défense bogo-indienne</h2> <!-- Nom de le défence/ouverture -->
+            <p>Avec cet échec au roi, les noirs ne cachent pas leur intention d'échanger au moins une pièce mineure. Si la couverture 4. Cc3 ramène dans les sentiers de la Nimzovitch, les coups 4. Fd2 et 4. Cbd2 donnent des schémas plus spécifiques à cette défense.</p>
+        </div>
+    </section>
+</section>		<!-- C'est la section de l'OUVERTURE BOGO-INDIENNE-->
+
+<form class="commentaire" th:replace="~{fragment::commentaire}"></form> <!-- Fragment du formulaire de soumission d'un commentaire -->
+
+
+
+<aside id="contact" th:replace="~{fragment::contact}"></aside>     <!-- Fragment du lien vers le formulaire pour contacter les administrateurs -->
+</body>
+</html>

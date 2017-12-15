@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head >
+	<title> Ten tips to improve your game</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../../css/general.css">
+</head>
+
+<body>
+
+<header th:replace="~{fragment::menu}"></header>
+
+
+	<h1>You can find Ten Tips to improve your game</h1>
+	<ol>
+		<li>Prenez votre temps. Votre objectif est résoudre les problèmes et d’améliorer votre calcul mental</li>
+		<li> Compter le matériel. Qui a l’avantage de matériel?</li>
+		<li>Vérifiez tous les échecs possibles (le Roi adverse est-il exposé ou bien dans une impasse)</li>
+		<li>Vérifiez les captures, à savoir si votre adversaire a laissé des pièces sans protection ou mal défendues</li>
+		<li>Vérifier les échanges avec des coups directs et la conséquence du dernier coup joué</li>
+		<li>Ne jouez pas un coup si vous n’êtes pas certain que c’est le meilleur coup. Demandez-vous si votre adversaire peut vous mettre en échecs, menace de vous mater, de capturer une de vos pièces. C’est ma méthode « Échecs Vision 360o », vous devez prendre le temps de réfléchir, de faire le tour complet de vos questions internes (360o) avant de jouer.</li>
+		<li> La majorité de vos erreurs (parties perdues ou problèmes non résolus), c’est que vous n’avez pas vu le bon coup de votre adversaire. Prenez le temps de regarder et analyser tout le jeu (Vision à 360o) avant de jouer votre coup.</li>
+		<li>Considérez la position finale que vous projetez de jouer (votre calcul mental) et demandez-vous ce que votre adversaire peut faire dans cette position.</li>
+		<li> Après que vous avez réussi un problème, n’allez pas au problème suivant. Observer pourquoi vous avez réussi ce problème: vos pièces étaient plus actives? Vous aviez une avance de développement? Le Roi adverse était à découvert? Etc. Prendre le temps d’observer chacune des positions gagnantes va améliorer votre jeu positionnel durant une vraie partie d’échecs.</li>
+		<li>Après avoir échoué un problème, étudiez pourquoi vous avez manqué votre combinaison. C’est en évitant de commettre les mêmes erreurs que nous progressons.</li>
+	</ol>
+	<nav>
+		<video controls="controls">
+			<source src="video/bart.mp4" type="../video/mp4"/>
+		</video>
+	</nav>
+<aside id="contact" th:replace="~{fragment::contact}"></aside>
+</body>
+
+</html>

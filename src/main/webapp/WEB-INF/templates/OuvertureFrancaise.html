@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Ouvertures</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../css/general.css">
+    <link rel="stylesheet" type="text/css" href="../../css/war.css">
+</head>
+
+<body>
+
+<header th:replace="~{fragment::menu}"></header>    <!-- Fragment du Menu déroulant-->
+
+    <section class="globale">   <!-- C'est la section de OUVERTURE FRANCAISE -->
+        <section class="def">
+            <div class="zone1">	<!-- On travaille sur les blocs d'identité "zone 1". Ce sont les titres et images des articles-->
+                <img src="../../img/francaise.PNG">
+            </div>
+            <div class="para">		<!-- Création d'un sous-bloc d'identification "para", ce sont les textes des articles-->
+                <h2>La défence française</h2>	<!-- Nom de le défence/ouverture -->
+                <p> L'idée de cette défense est claire: le contrôle de la case d5 pour, au coup suivant, s'assurer de
+                    l'occuper avec un pion. L'occupation immédiate 1. ... d5 (défense scandinave) ne permet pas ,
+                    après 2. exd5, de conserver un pion sur la case d5. C'est la recherche d'une position solide qui
+                    constitue la principale motivation des noirs dans le choix de 1. ... e6.
+                Le manque d'espace sera la principale rançon que les noirs auront à payer contre cette solidité</p>
+            </div>
+        </section>
+
+        <blockquote>
+            <span>AUTEUR</span>
+            <p>ablab lab bla bab dbldbal labb balbla èé</p>
+
+        </blockquote>
+
+
+        <form method="post" class="commentaire"  > <!-- Formulaire pour écrire un commentaire-->
+            <fieldset>
+                <legend>Commentez cette ouverture</legend>
+                <label for="login"> Saisissez pseudo : </label>
+                <input type="text" name="login" placeholder="Votre pseudo" id="login" required >
+
+                <label for="comment"> Saisissez votre commentaire : </label>
+                <textarea name="comment" id="comment"> Votre commentaire </textarea>
+
+                <div class="button">
+                    <button type="submit">Validez</button>
+                </div>
+
+
+            </fieldset>
+
+
+        </form> <!-- Formulaire de soumission de commentaire -->d'un commentaire -->
+
+    </section>      <!-- C'est la section de OUVERTURE FRANCAISE -->
+
+    <aside id="contact" th:replace="~{fragment::contact}"></aside>  <!-- Fragment du lien vers le formulaire pour contacter les administrateurs -->
+</body>
+</html>

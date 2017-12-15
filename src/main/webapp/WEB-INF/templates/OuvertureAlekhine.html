@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Ouverture Alekhine</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../css/general.css">
+    <link rel="stylesheet" type="text/css" href="../../css/war.css">
+</head>
+
+<body>
+
+<header th:replace="~{fragment::menu}"></header>    <!-- Fragment du menu déroulant-->
+
+
+<section class="globale">	<!-- C'est la section de l' OUVERTURE ALEKHINE -->
+    <section class="def">
+        <div class="zone1">	<!-- On travaille sur les blocs d'identité "zone 1". Ce sont les titres et images des articles-->
+
+            <img src="../../img/alekhine.PNG">
+        </div>
+        <div class="para">		<!-- Création d'un sous-bloc d'identification "para", ce sont les textes des articles-->
+            <h2> La défence Alékhine</h2>	<!-- Nom de le défence/ouverture -->
+            <p>L'une des ouvertures les plus provocantes. Les noirs incitent les blancs à avancer leur pion en e5, estimant qu'il constituera plus une cible qu'une arme.
+                Plusieurs variantes permettent aux blancs de converser durablement leur avantage d'espace en ne laissant au camp adverse que la possibilité d'une politique d'attente </p>
+        </div>
+    </section>
+
+</section>		<!-- C'est la section de l' OUVERTURE ALEKHINE -->
+
+<th:block th:each="commentaires: ${commentaires}">
+    <span th:text="${commentaires.auteur}"></span>
+    <p th:text="${commentaires.texte}">ablab lab bla bab dbldbal labb balbla èé</p>
+</th:block>
+
+<form class="commentaire" th:replace="~{fragment::commentaire}">
+</form> <!-- Fragment du formulaire de soumission d'un commentaire -->
+
+
+
+<aside id="contact" th:replace="~{fragment::contact}"></aside>     <!-- Fragment du lien vers le formulaire pour contacter les administrateurs -->
+</body>
+</html>

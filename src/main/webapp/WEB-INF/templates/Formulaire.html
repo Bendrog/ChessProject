@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Autentification</title><!-- -->
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../../../../../../../../projet%20html/css/general.css"><!-- -->
+	<link rel="stylesheet" type="text/css" href="../../../../../../../../projet%20html/css/form.css">
+	
+</head>
+<body>
+	<header>
+		<nav id="conteneur">
+		<ul id="menu-deroulant">
+		
+			<li class="sousliste"> 
+				<a href="../../../../../../../../projet%20html/html/test.html">HOME</a>
+			</li>
+ 			<li class="sousliste"><a href="#">S'entraîner</a>
+				<ul>
+					<li><a href="attaque.html">Attaque</a></li>
+					<li><a href="defence.html"> Défence </a></li>
+					<li><a href="conseils.html">Ten tips</a></li>
+				</ul>
+			</li>
+			<li class="sousliste"><a href="../../../../../../../../projet%20html/html/jeu.html">jeu</a>
+			</li>
+		</ul>
+		</nav>
+	</header>
+
+	<form method="post" action="traitement.php"> <!-- Formulaire pour se connecter-->
+		<fieldset>
+		<legend>Autenthification</legend>
+		<label for="login"> Saisissez pseudo : </label>
+		<input type="text" name="login" placeholder="Votre pseudo" id="login" required >
+		<label for="password"> Rentrez votre mot de passe : </label>
+		<input type="text" name="password" placeholder="Entrez votre mot de passe" id="password" required>
+		<input type="submit" name="">
+			
+		</fieldset>
+	</form>
+</body>
+</html>	
